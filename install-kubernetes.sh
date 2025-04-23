@@ -223,7 +223,7 @@ function install_cni(){
   echo "Installing Calico CNI"
   for manifest in tigera-operator custom-resources; do
     echo "==> Installing Calico ${manifest}"
-    kubectl create -f https://raw.githubusercontent.com/Zed-Hosting/registry/refs/heads/main/calico.yaml 3>&2 >> $LOG_FILE 2>&1
+    kubectl create -f https://raw.githubusercontent.com/Zed-Hosting/registry/refs/heads/main/calico.yaml
   done
 }
 
